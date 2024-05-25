@@ -134,3 +134,29 @@ CASE
 	WHEN PerformanceRating BETWEEN 69 AND 60 THEN Salary*1.15
 	ELSE Salary
 END;
+-----------------
+Select * from Employees2
+
+Select Name, Department, PerformanceRating,
+Salary = 
+CASE 
+	WHEN Department = 'IT' THEN
+		CASE 
+			WHEN PerformanceRating >= 90 THEN Salary*1.25
+			WHEN PerformanceRating BETWEEN 89 AND 70 THEN Salary*1.20
+			ELSE Salary
+		END
+	WHEN Department = 'Marketing' THEN
+		CASE 
+			WHEN PerformanceRating >= 90 THEN Salary*1.20
+			WHEN PerformanceRating BETWEEN 89 AND 70 THEN Salary*1.15
+			ELSE Salary
+		END
+	ELSE
+		CASE 
+			WHEN PerformanceRating >= 90 THEN Salary*1.15
+			WHEN PerformanceRating BETWEEN 89 AND 70 THEN Salary*1.10
+			ELSE Salary
+		END
+END
+FROM Employees2
