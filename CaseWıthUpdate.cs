@@ -121,3 +121,16 @@ internal class Program
         Console.ReadKey();
     }
 }
+
+
+
+--------------> SQL
+
+UPDATE Employees2 
+SET Salary =
+CASE 
+	WHEN PerformanceRating > 90 THEN Salary*1.5
+	WHEN PerformanceRating BETWEEN 90 AND 70 THEN Salary*1.25
+	WHEN PerformanceRating BETWEEN 69 AND 60 THEN Salary*1.15
+	ELSE Salary
+END;
