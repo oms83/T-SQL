@@ -5,7 +5,7 @@ DECLARE @y INT = 1;
 
 WHILE @x <= 10
 BEGIN 
-	SET @y = 0;
+	SET @y = 1;
 	WHILE @y <= 10
 	BEGIN
 		PRINT CAST(@x AS VARCHAR) + '*' + CAST(@y AS VARCHAR) + '=' + CAST(@x*@y AS VARCHAR);
