@@ -1,0 +1,40 @@
+What is the purpose of the CASE statement in T-SQL?
+To allow for conditional logic based on specific values
+
+In T-SQL, can the CASE statement be used as a standalone control-of-flow structure?
+No, only used within queries
+
+What is one best practice for using CASE statements in T-SQL?
+Avoid complexity for better readability
+
+What is the result of a CASE statement if none of the conditions are met and there is no ELSE clause?
+NULL is returned
+
+Can CASE statements be nested in T-SQL?
+Yes, there is no limit on the depth of nesting
+
+What will happen if the expression in the WHEN clause of a CASE statement matches multiple conditions?
+The result for the first matching condition is returned
+
+Can a CASE statement be used in the ORDER BY clause of a SELECT statement in T-SQL?
+Yes, to conditionally determine the order of rows
+
+What is the result of a CASE statement if a searched condition uses a comparison with NULL using the '=' operator?
+It will not match, as NULL is not equal to any value, including itself.
+
+Which of the following operators can be used within a CASE statement's WHEN clause?
+LIKE, IN, BETWEEN
+Only = (equality)
+Only < and > (less than and greater than)
+
+In T-SQL, can a CASE statement be used within an UPDATE statement?
+Yes, to conditionally determine the value to set in a column.
+
+Is it mandatory to have an ELSE clause in every CASE statement in T-SQL?
+No, it is optional; if omitted, NULL is returned when no condition matches.
+
+Can a CASE statement in T-SQL return different data types in different branches?
+Yes, but the SQL Server will implicitly convert them to a compatible type.
+
+In T-SQL, which of the following is true about using a CASE statement in the GROUP BY clause?
+It's allowed and can be used to create groups based on conditional logic.
