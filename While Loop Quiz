@@ -1,0 +1,11 @@
+What is the purpose of a WHILE loop in T-SQL?
+To execute a block of SQL statements repeatedly
+
+What is the syntax of a WHILE loop in T-SQL?
+WHILE condition BEGIN END
+
+Is there a FOR loop in T-SQL?
+No
+
+What is the primary looping construct in T-SQL?
+WHILE loop
