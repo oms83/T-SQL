@@ -1,0 +1,22 @@
+What is the purpose of the ERROR_NUMBER() function?
+Returns the error number of the error that caused the CATCH block to be executed
+
+What is the purpose of the ERROR_SEVERITY() function?
+Returns the severity level of the error
+
+What is the purpose of the ERROR_STATE() function?
+Returns the state number of the error
+
+What is the purpose of the ERROR_PROCEDURE() function?
+Returns the name of the stored procedure or trigger in which the error occurred
+
+Returns the name of the stored procedure or trigger in which the error occurred
+Returns the line number where the error occurred
+
+What is the purpose of the ERROR_MESSAGE() function?
+Provides the complete text of the error message
+
+How can error functions be beneficial for T-SQL developers?
+They help in understanding the nature and seriousness of the error
+They can be used to pinpoint the exact location in the code where the error was raised
+They provide comprehensive error diagnostics for logging, debugging, and informing users
