@@ -9,3 +9,5 @@ Insert Into #EmployeesTemp (EmployeeID, Name, Department) Values (1, 'Omer MEMES
 Insert Into #EmployeesTemp (EmployeeID, Name, Department) Values (2, 'Ali MEMES', 'IT');
 
 Select * From #EmployeesTemp
+
+Drop Table #EmployeesTemp
