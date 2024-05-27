@@ -1,3 +1,5 @@
+-- Error handling in T-SQL is a crucial aspect of writing robust SQL code. It allows you to gracefully handle unexpected events and errors that occur during the execution of SQL scripts. --
+
 USE C21_DB1 
 
 GO
