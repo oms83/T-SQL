@@ -29,3 +29,22 @@ a table variable within that transaction are not rolled back.
 Use Cases:
 Temporary Tables: Ideal for complex operations, temporary storage of data that requires rollback capabilities, and when working with a large number of rows.
 Table Variables: Useful for quick, temporary storage of a small amount of data that does not require transactional rollbacks or heavy-duty operations.
+
+Which statement is used to create temporary tables in T-SQL?
+CREATE TABLE
+
+What is the scope of temporary tables in T-SQL?
+Limited to the current session
+
+How long do temporary tables exist in T-SQL?
+Until explicitly dropped
+Until the session/connection is closed
+
+Which type of table is better for larger datasets and complex operations in T-SQL?
+Temporary tables
+
+Which type of table has minimal transaction logging in T-SQL?
+Table variables
+
+When should table variables be used in T-SQL?
+For quick, temporary storage of a small amount of data
