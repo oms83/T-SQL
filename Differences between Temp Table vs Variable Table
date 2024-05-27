@@ -1,0 +1,31 @@
+Differences between Temp Table vs Variable Table
+
+In T-SQL, which is the SQL server's extension for SQL, two common ways to store data temporarily are through temporary tables and table variables. 
+Here's a lesson that outlines the differences between them:
+
+Definition and Scope:
+Temporary Tables: Created using the CREATE TABLE statement, with the table name prefixed by # for local temporary tables (visible only in the current session) 
+or ## for global temporary tables (visible to all sessions). They are stored in the tempdb database.
+
+Table Variables: Declared using the DECLARE statement and have a similar structure to permanent tables. 
+The syntax is DECLARE @TableName TABLE (column definitions). They have a limited scope and are typically used within the function, 
+stored procedure, or batch in which they are declared.
+
+Lifetime:
+Temporary Tables: Exist until they are explicitly dropped using the DROP TABLE command or until the session/connection that created them is closed.
+Table Variables: Automatically cleaned up at the end of the batch, function, or stored procedure in which they are defined.
+
+Performance and Usage:
+Temporary Tables: Suitable for larger datasets and complex operations, like joining with other tables. They support indexes, statistics, 
+and can result in better query performance for large data sets.
+Table Variables: Better for smaller datasets and simpler operations. They have lower overhead but lack some of the optimizations available to temporary tables, 
+like precompiled execution plans and statistics.
+
+Transaction Logs:
+Temporary Tables: Fully logged in the transaction log, which can impact performance for large data manipulation operations.
+Table Variables: Have minimal logging and do not participate in transactions. This means that if a transaction is rolled back, changes made to 
+a table variable within that transaction are not rolled back.
+
+Use Cases:
+Temporary Tables: Ideal for complex operations, temporary storage of data that requires rollback capabilities, and when working with a large number of rows.
+Table Variables: Useful for quick, temporary storage of a small amount of data that does not require transactional rollbacks or heavy-duty operations.
