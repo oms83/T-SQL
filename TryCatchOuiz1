@@ -1,0 +1,8 @@
+What is the primary mechanism for error handling in T-SQL?
+TRY. . . CATCH
+
+What does the CATCH block in a TRY. . . CATCH construct contain?
+Code that runs if an error occurs
+
+Which function returns the complete text of the error message?
+ERROR_MESSAGE()
