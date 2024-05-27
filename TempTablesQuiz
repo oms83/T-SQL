@@ -21,3 +21,17 @@ Conclusion:
 Temporary tables are a powerful feature in T-SQL, allowing for efficient handling of complex queries and data processing tasks. Their ability to store intermediate results and 
 their scope of visibility make them a versatile tool for database developers and administrators. Understanding when and how to use temporary tables can significantly optimize SQL operations.
 
+What are temporary tables used for?
+Storing and processing intermediate results
+
+Where are temporary tables created?
+In the tempdb database
+
+What is the advantage of using temporary tables?
+Improved performance in complex queries
+
+How are local temporary tables different from global temporary tables?
+Local temporary tables are deleted when the connection is closed, while global temporary tables are deleted when the last connection using them is closed
+
+What is the recommended practice for cleaning up temporary tables?
+They should be explicitly dropped when they are no longer needed
