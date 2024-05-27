@@ -1,0 +1,23 @@
+Introduction to Temporary Tables
+Temporary tables in T-SQL are used to store and process intermediate results. These tables are created in the tempdb database and are automatically deleted when they are no longer used. 
+Temporary tables are particularly useful in complex SQL operations where intermediate results need to be stored temporarily.
+
+Types of Temporary Tables
+Local Temporary Tables: Created with a single hash (#) symbol. Visible only to the connection that creates it and are deleted when the connection is closed.
+Syntax: CREATE TABLE #TempTable (...)
+Global Temporary Tables: Created with a double hash (##) symbol. Visible to all connections and are deleted when the last connection using it is closed.
+Syntax: CREATE TABLE ##TempTable (...)
+Advantages of Temporary Tables
+Performance: Can improve performance in complex queries by breaking them into simpler parts.
+Complex Data Processing: Useful for storing intermediate results in complex data processing.
+Transaction Management: Changes in a temporary table are not logged extensively, which can be beneficial in large transactions.
+
+Cleaning Up
+Temporary tables are automatically deleted when the session that created them ends. However, it's often considered good practice to explicitly drop them when they are no longer needed.
+
+
+Conclusion:
+
+Temporary tables are a powerful feature in T-SQL, allowing for efficient handling of complex queries and data processing tasks. Their ability to store intermediate results and 
+their scope of visibility make them a versatile tool for database developers and administrators. Understanding when and how to use temporary tables can significantly optimize SQL operations.
+
