@@ -12,6 +12,14 @@ BEGIN CATCH
 		ERROR_MESSAGE() AS ErrorMassage
 END CATCH 
 
+--Error Number: 8134
+--ErrorState: 1
+--ErrorProcedure: NULL
+--ErrorLine: 4
+--ErrorSeverity: 16.
+--ErrorMassage: Divide by zero error encountered.
+
+
 --Error Functions Overview
 --ERROR_NUMBER()
 --Purpose: Returns the error number of the error that caused the CATCH block to be executed.
