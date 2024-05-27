@@ -1,0 +1,64 @@
+Differences between temporary tables and normal (permanent) tables:
+The differences between temporary tables and normal (permanent) tables in SQL are significant in terms of scope, lifespan, usage, and physical storage. 
+Here's a breakdown of the key differences:
+
+
+1. Lifespan and Scope
+Temporary Tables: They are created in the tempdb database and exist only for the duration of the session or connection that created them. Local 
+temporary tables (prefixed with #) are visible only to the connection that created them, while global temporary tables (prefixed with ##) are 
+visible to all connections but still exist only until the last connection using them is closed.
+
+Normal Tables: Permanent tables are created in a user-defined database and persist until they are explicitly dropped by a user. They are visible 
+and accessible to any user with the appropriate permissions, regardless of the user session or connection.
+
+
+2. Performance and Storage
+Temporary Tables: They are stored in the tempdb database, which is a system database recreated every time SQL Server restarts. Operations on 
+temporary tables generally have less logging and lower locking overhead, which can lead to performance benefits, especially for complex queries 
+and large data manipulations.
+
+Normal Tables: Permanent tables are stored in the database in which they are created and are subject to more extensive logging and locking. 
+This ensures data integrity and durability, which are critical for persistent data storage.
+
+
+3. Usage
+Temporary Tables: Ideal for storing intermediate results in complex queries, for data processing within stored procedures, and for situations 
+where data needs to be isolated to a single session or connection.
+
+Normal Tables: Used for storing data that needs to persist beyond the current session, for shared access among multiple users, and for data 
+that forms the core structure of the application’s database schema.
+
+
+4. Transaction Logging
+Temporary Tables: They have minimal transaction logging. This means that while they do participate in transactions, rollbacks and other 
+transactional controls might have less overhead compared to normal tables.
+
+Normal Tables: Fully participate in transactions with complete logging, ensuring data integrity and supporting complex transactional controls.
+
+
+5. Backup and Recovery
+Temporary Tables: They are not included in database backups and cannot be recovered after a server restart or crash.
+
+Normal Tables: They are included in database backups and can be recovered in case of server restarts or database failures.
+
+
+Conclusion
+Choosing between temporary and normal tables depends on the specific requirements of the task at hand. Temporary tables are ideal for transient 
+data and quick, session-specific operations, whereas normal tables are suited for storing persistent data that requires full transactional support, 
+backup, and recovery.
+
+
+How long do temporary tables exist?
+Only for the duration of the session or connection that created them
+
+Where are temporary tables stored?
+In the tempdb database
+
+What is the main usage of temporary tables?
+Storing intermediate results in complex queries
+
+Do temporary tables participate in transactions?
+Yes, but with less transaction logging compared to normal tables
+
+Are temporary tables included in database backups?
+No, they are not included in database backups
