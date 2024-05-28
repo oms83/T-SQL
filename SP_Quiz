@@ -1,0 +1,126 @@
+What is a stored procedure in T-SQL?
+A precompiled collection of SQL statements and optional control-of-flow statements.
+
+Which of the following is a benefit of using stored procedures?
+Reduced network traffic
+
+Which SQL keyword is used to create a stored procedure?
+CREATE PROCEDURE
+
+In SQL Server, are stored procedure names case-sensitive?
+It depends on the collation setting of the database or server. If the collation is case-sensitive (e.g., SQL_Latin1_General_CP1_CS_AS), 
+stored procedure names are case-sensitive. If the collation is case-insensitive (e.g., SQL_Latin1_General_CP1_CI_AS), they are not case-sensitive.
+
+How do you execute a stored procedure named 'GetEmployeeData'?
+EXEC GetEmployeeData;
+
+How can a stored procedure return a value?
+Using RETURN statement
+Using OUT parameter
+
+Can a stored procedure call another stored procedure?
+Yes, even if SP in another database
+
+What is the purpose of the BEGIN and END statements in a stored procedure?
+To define the start and end of the procedure
+
+Which of the following is used to pass a variable into a stored procedure?
+Input parameter
+
+What does the SCOPE_IDENTITY() function return?
+The last used identity value in the current scope
+
+Which statement is true about the OUTPUT parameters in a stored procedure?
+They can return a value to the calling procedure.
+
+What happens if you try to create a stored procedure with a name that already exists?
+Nothing happens to the existing SP, and An error is thrown.
+
+Which command is used to modify an existing stored procedure?
+ALTER PROCEDURE
+
+Can a stored procedure return multiple result sets?
+Yes
+
+Which of the following is a valid reason to use stored procedures?
+To prevent SQL injection attacks
+To encapsulate business logic
+To improve performance
+
+Can stored procedures be used to generate dynamic SQL?
+Yes, using the EXECUTE statement
+
+How can you improve the performance of a stored procedure?
+Using indexes effectively
+
+What is parameter sniffing in the context of stored procedures?
+A process where SQL Server optimizes execution based on parameter values
+
+What is the default value of a parameter if not specified in a T-SQL stored procedure?
+NULL
+
+Which T-SQL statement is used to delete a stored procedure?
+DROP PROCEDURE
+
+What should be used to pass a table of data to a stored procedure?
+Table-valued parameter
+
+How can you prevent SQL injection in stored procedures?
+By using parameterized queries
+
+What is the purpose of the RETURN statement in a stored procedure?
+To exit the procedure and return an integer status code
+
+How can the output of a stored procedure be captured?
+Using the OUTPUT keyword
+
+What is the main difference between a function and a stored procedure in SQL Server?
+A function can be used in a SELECT statement, but a stored procedure cannot.
+
+Can a stored procedure in T-SQL have a transaction within it?
+Yes, including nested transactions
+
+What happens when a stored procedure is called with the wrong number of parameters?
+It does not execute and an error is returned.
+
+Can you use PRINT statements in a stored procedure for debugging purposes?
+Yes, and the output will be visible in the messages tab in SSMS
+
+What is the scope of variables declared in a stored procedure?
+Local to the stored procedure
+
+What is the result of nesting too many stored procedures?
+Potential stack overflow
+
+Can you use Error Handling Try..Catch in SP?
+Yes
+
+What is the impact of using the sp_ prefix in the name of a user-defined stored procedure?
+It may cause name conflict issues with system stored procedures.
+
+Which T-SQL command is used to view the definition of a stored procedure?
+SP_HELPTEXT
+
+In a stored procedure, what is a good practice when handling errors?
+Use TRY...CATCH blocks to handle exceptions
+
+What is a key benefit of encapsulating business logic in stored procedures?
+It makes the application layer simpler and more secure
+
+How can you capture the number of rows affected by a SQL statement in a stored procedure?
+By using the @@ROWCOUNT system function.
+
+Can a stored procedure contain dynamic SQL?
+Yes, and it can be executed using EXEC or sp_executesql.
+
+Can a stored procedure in T-SQL invoke a web service?
+Yes, but only through CLR integration
+
+What is the use of the WITH ENCRYPTION option when creating a stored procedure?
+To encrypt the procedure's source code to protect it from being viewed
+
+What is the role of the sp_executesql stored procedure in SQL Server?
+To execute a dynamic SQL statement
+
+You can you capture the number of rows affected by a SQL statement in a stored procedure, By using the @@ROWCOUNT system function.
+True
