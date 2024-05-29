@@ -15,7 +15,7 @@ Inline Table-Valued Functions (ITVFs)
 Multi-Statement Table-Valued Functions (MTVFs)
 
 Which type of Table-Valued Function can have multiple SELECT statements within them?
-Table-Valued Functions with Parameters
+Multi-Statement Table-Valued Functions (MTVFs)
 
 Which type of Table-Valued Function accepts parameters?
 Inline Table-Valued Functions (ITVFs)
