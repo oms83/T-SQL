@@ -1,0 +1,25 @@
+What are Table-Valued Functions (TVFs) in T-SQL?
+User-defined functions in T-SQL that return tabular data
+
+How many types of Table-Valued Functions (TVFs) are there in T-SQL?
+Two types
+
+Where can Inline Table-Valued Functions (ITVFs) be used in T-SQL?
+In the FROM clause
+
+Can Multi-Statement Table-Valued Functions (MTVFs) accept parameters?
+Yes
+
+Which type of Table-Valued Function can be used in the FROM clause of a SELECT statement?
+Inline Table-Valued Functions (ITVFs)
+Multi-Statement Table-Valued Functions (MTVFs)
+
+Which type of Table-Valued Function can have multiple SELECT statements within them?
+Table-Valued Functions with Parameters
+
+Which type of Table-Valued Function accepts parameters?
+Inline Table-Valued Functions (ITVFs)
+Multi-Statement Table-Valued Functions (MTVFs)
+
+Table-Valued Function can be used with joins.
+True
