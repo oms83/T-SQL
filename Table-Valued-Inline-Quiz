@@ -1,0 +1,31 @@
+What are Inline Table-Valued Functions (ITVFs) in T-SQL?
+They are user-defined functions that return a table expression.
+
+How are Inline Table-Valued Functions defined?
+Using the RETURNS TABLE clause and a single SELECT statement.
+
+What does the RETURNS TABLE clause specify?
+The function will return a table.
+
+How do you use an Inline Table-Valued Function in a query?
+By using the SELECT statement to retrieve data from the function.
+
+What can you do with the output of an Inline Table-Valued Function?
+Treat it as a regular table and perform powerful querying operations.
+
+What is an Inline Table-Valued Function (ITVF) in T-SQL?
+A function that returns a table variable and cannot have multiple statements in its body
+
+Which of the following is a characteristic of an Inline Table-Valued Function in T-SQL?
+It is composed of a single SELECT statement
+
+How do you invoke an Inline Table-Valued Function in T-SQL?
+SELECT * FROM dbo.MyFunction()
+
+In an Inline Table-Valued Function in T-SQL, what must the RETURN statement contain?
+A single SELECT statement
+
+Can i use update and insert statement in inline functions?
+No, you cannot use UPDATE or INSERT statements in Inline Table-Valued Functions (ITVFs) in T-SQL. Inline Table-Valued Functions are designed to be read-only, 
+and they return a table variable that is essentially a result of a single SELECT statement. Since these functions are read-only, they cannot modify 
+the data in the database, which means you cannot perform data manipulation operations like INSERT, UPDATE, DELETE, or MERGE within them.
