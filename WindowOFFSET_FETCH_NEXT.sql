@@ -13,3 +13,6 @@ FETCH NEXT @RowPerPage ROWS ONLY
 3	Charlie	Math	78
 8	Henry	English	80
 */
+
+-- OFFSET: Skips a set number of rows in the data.
+-- FETCH NEXT: Retrieves a specific number of rows after the offset.
