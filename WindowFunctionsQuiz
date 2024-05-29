@@ -1,0 +1,11 @@
+What are window functions in T-SQL?
+Functions that allow you to perform calculations across a set of rows related to the current row within a result set.
+
+Which type of window function is used to perform calculations over a range of values?
+Aggregate Functions
+
+Which type of window function is used to assign a ranking or a row number to each row in a partition?
+Ranking Functions
+
+Which type of window function is used for advanced analytical operations like moving averages or cumulative totals?
+Analytic Functions
