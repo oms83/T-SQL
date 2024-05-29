@@ -35,3 +35,11 @@ Science	      84	6
 English	      80	7
 Math	        78	8
 */
+Alice	Math	90	2
+Dave	Science	88	3
+Isabella	English	88	4
+Bob	Math	85	5
+Fiona	Science	84	6
+Henry	English	80	7
+Charlie	Math	78	8
+Grace	English	75	9
