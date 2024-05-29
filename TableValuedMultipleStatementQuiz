@@ -1,0 +1,14 @@
+What is the purpose of Multi-Statement Table-Valued Functions (MTVFs) in T-SQL?
+To encapsulate complex logic and return tabular data.
+
+How is a Multi-Statement Table-Valued Function created in T-SQL?
+Using the CREATE FUNCTION statement
+
+Which of the following statements is true about MTVFs in T-SQL?
+They must return a result set that is a table
+
+How can you invoke a Multi-Table Valued Function in T-SQL?
+SELECT * FROM dbo.MyFunction()
+
+What must be included in the definition of a MTVF in T-SQL?
+A RETURN statement with a table value`
