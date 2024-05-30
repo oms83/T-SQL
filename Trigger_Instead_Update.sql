@@ -61,7 +61,22 @@ WHERE StudentID = 1
 --(1 row affected)
 --(1 row affected)
 --(1 row affected)
+------------------------------------------------------------
 
+/*
+What is the purpose of the StudentView?
+To provide a complete profile of each student
+
+Why can't an 'After Update' trigger be used effectively for updating the StudentView?
+The StudentView is not directly updateable
+The StudentView is based on multiple tables
+
+What is the solution for updating the StudentView?
+Using an 'Instead Of Update' trigger
+
+What is the purpose of the Instead Of Update trigger?
+To distribute the changes to the underlying tables
+*/
 
 
 
