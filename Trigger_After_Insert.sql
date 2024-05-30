@@ -23,7 +23,7 @@ END;
 SELECT * FROM Students;
 
 INSERT 
-  INTO StudentInsertLog (StudentID, Name, Subject, Grade) 
+  INTO Students (StudentID, Name, Subject, Grade) 
 VALUES (10, 'Omer', 'Turkish', 100);
 
 SELECT * FROM StudentInsertLog;
