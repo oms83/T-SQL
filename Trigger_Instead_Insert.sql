@@ -13,3 +13,11 @@ INSERT INTO StudentView (StudentID, Name, Address, Course, Grade)
 VALUES (3, 'Alice Johnson', '789 Pine Rd', 'Physics', 88);
 
 SELECT * FROM StudentView;
+
+/*
+
+1	OMER MEMES	123 Main St	Computer Science	100
+2	Jane Smith	456 Oak Ave	Mathematics	85
+3	Alice Johnson	789 Pine Rd	Physics	88
+
+*/
