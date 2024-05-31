@@ -36,3 +36,14 @@ WITH EmployeesInfo AS
 	GROUP BY Department
 )
 SELECT * FROM EmployeesInfo
+
+
+-- CTE
+WITH CTE AS
+(
+	SELECT Department, MAX(Salary) AS MaxSalary
+	FROM Employees2 
+	GROUP BY Department
+)
+SELECT Name, CTE.Department, CTE.MaxSalary FROM CTE
+INNER JOIN Employees2 ON CTE.MaxSalary = Employees2.Salary AND CTE.Department = Employees2.Department
