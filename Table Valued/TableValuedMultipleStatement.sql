@@ -9,12 +9,9 @@ RETURNS @Result TABLE
 AS 
 BEGIN
 	INSERT INTO @Result (SID, SName, SSubject, SGrade)
-	SELECT TOP 3 StudentID, Name, Subject, Grade 
-	FROM Students
+	SELECT TOP 3 StudentID, Name, Subject, Grade FROM Students
 	ORDER BY Grade DESC;
-
 	RETURN;
 END
-
-
+	
 SELECT * From GetPerformingStudents()
