@@ -3,16 +3,13 @@ USE C21_DB1;
 -- Sub Quiry
 SELECT * FROM 
 (
-	SELECT Name, Subject, Grade 
-	FROM Students 
-
+	SELECT Name, Subject, Grade  FROM Students 
 ) AS StudentInfo;
--- Common Table Expression (CTE)
+
 -- CTE
 WITH StudentInfo AS
 (
-	SELECT Name, Subject, Grade 
-	FROM Students 
+	SELECT Name, Subject, Grade FROM Students 
 )
 SELECT * FROM StudentInfo
 
