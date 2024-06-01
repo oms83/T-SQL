@@ -37,5 +37,5 @@ Select * From @Employees
 -- Can table variables be indexed in T-SQL?
 -- Yes, but only at the time of declaration as a primary key.
 
--- They are cleaned up automatically at the end of the batch, procedure, or function.
 -- Which of the following statements is true about table variables?
+-- They are cleaned up automatically at the end of the batch, procedure, or function.
