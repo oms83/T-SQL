@@ -127,7 +127,6 @@ from Students
 */
 -------------------------------------------
 
-
 -- Ex4
 select Subject
 	,Sum(Grade) AS SumOfGrade 
@@ -139,4 +138,29 @@ English	155	77	2
 Math	263	87	3
 Science	264	88	3
 Turkish	198	99	2
+*/
+-------------------------------------------
+
+	
+-- Ex5
+With T AS
+(
+	SELECT Subject, AVG(Grade) AS SubjectAvgGrade, Sum(Grade) AS SubjectTotalGrade 
+	FROM Students 
+	Group BY Subject
+)
+SELECT S.Name, S.Subject, T.SubjectAvgGrade, T.SubjectTotalGrade 
+FROM T
+INNER JOIN Students S ON S.Subject = T.Subject
+/*
+Grace	English	77	155
+Henry	English	77	155
+Alice	Math	87	263
+Bob	Math	87	263
+Charlie	Math	87	263
+Dave	Science	88	264
+Emma	Science	88	264
+Fiona	Science	88	264
+Ali	Turkish	99	198
+Omer---	Turkish	99	198
 */
