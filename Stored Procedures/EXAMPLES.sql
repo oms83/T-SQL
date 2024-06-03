@@ -179,3 +179,53 @@ else
 	
 --------------------------------------------
 
+-- Remove By ID
+create procedure SP_RemovePersonByID
+	@personID int
+as 
+begin
+	if exists(select 1 from People where PersonID = @personID)
+	begin
+		delete from People where PersonID = @personID;
+		return 1;
+	end
+	else	
+	begin
+		return 0;
+	end
+end
+
+select * from People
+
+declare @result int;
+declare @personID int = 5;
+exec @result = SP_RemovePersonByID
+	@personID = @personID
+
+if @result = 1
+	select 'Person with ID: ' + cast (@personID as varchar) + ' deleted successfully';
+else
+	select 'Person with ID: ' + cast (@personID as varchar) + ' is not deleted successfully';
+--------------------------------------------
+
+
+-- SP_HelpText 
+-- Obtains information about procedures
+exec sp_helptext 'SP_RemovePersonByID'
+
+/*
+create procedure SP_RemovePersonByID  
+ @personID int  
+as   
+begin  
+ if exists(select 1 from People where PersonID = @personID)  
+ begin  
+  delete from People where PersonID = @personID;  
+  return 1;  
+ end  
+ else   
+ begin  
+  return 0;  
+ end  
+end
+*/
